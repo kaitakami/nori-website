@@ -10,24 +10,33 @@
 
 <body>
     <div class="container">
-        <nav class="nav">
-            <div class="nav__bar">
-                <div>
-                    <img src="../assets/nori-logo.webp" alt="Nori Logo" class="nav__bar__logo">
-                </div>
-                <div class="nav__links">
-                    <a href="#" class="nav__link">Home</a>
-                    <a href="#" class="nav__link">Catering</a>
-                    <a href="#" class="nav__link">Menu</a>
-                    <a href="#" class="nav__link">Order</a>
-                    <a href="#" class="nav__link">Contact Us</a>
-                </div>
+        <div class="nav__bar">
+            <div>
+                <img src="../assets/nori-sun-only.png" alt="Nori Logo" class="nav__bar__logo">
             </div>
-            <div class="nav__slide">
+            <div class="nav__links">
+                <a href="#" class="nav__link">Home</a>
+                <a href="#" class="nav__link">Catering</a>
+                <a href="#" class="nav__link">Menu</a>
+                <a href="#" class="nav__link">Order</a>
+                <a href="#" class="nav__link">Contact Us</a>
+            </div>
+        </div>
+        <nav class="nav nav__slider slide-1">
+            
+            <div class="nav__content">
                 <!-- The slideshow code is in style.css & index.js -->
-                <img src="../assets/nori-logo.webp" alt="Nori Logo slideshow" class="nav__slide__logo">
+                <img src="../assets/nori-logo.webp" alt="Nori Logo slideshow" class="nav__content__logo">
             </div>
         </nav>
+        <!-- The main layout is a grid divided in 3 columns, the first and last column are buttons and the second column is a slider with the menu's and texts -->
+        <main class="main">
+            <div class="main__button main__back-button"></div>
+            <div class="menu-slider">
+                
+            </div>
+            <div class="main__button main__next-button"></div>
+        </main>
     </div>
 
     <script src="main.js"></script>

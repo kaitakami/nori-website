@@ -14,41 +14,86 @@ body {
     font-family: var(--font-family);
 }
 
-.nav::before {
+/* Slider */
+.nav__slider::before {
     content: '';
-    position:  absolute;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(../assets/matcha-cake.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
     opacity: 0.4;
-    background-color: black;
 }
+
+.slide-1::before {
+    background-image: url(../assets/slider/1.webp);
+}
+
+.slide-2::before {
+    background-image: url(../assets/slider/2.webp);
+}
+
+.slide-3::before {
+    background-image: url(../assets/slider/3.webp);
+}
+
+.slide-4::before {
+    background-image: url(../assets/slider/4.webp);
+}
+
+.slide-5::before {
+    background-image: url(../assets/slider/5.webp);
+}
+
+/* NAV */
 
 .nav {
     background-color: rgba(8, 8, 8, 0.8);
 }
 
-.nav, .nav div {
+.nav,
+.nav div {
     position: relative;
 }
 
+/* NAVBAR */
 
 .nav__bar {
-    height: 100px;
+    width: 100%;
+    height: 64px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: calc(100% - 60%);
     place-items: center;
-    padding: 0 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: all 300ms ease-in-out;
+}
+
+.scroll-down .nav__bar {
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up .nav__bar {
+    background-color: rgba(255, 255, 255, 0.1);
+    filter: drop-shadow(0 -10px 20px rgb(0, 0, 0));
+    box-shadow: 0 5px 10px rgba(48, 48, 48, 0.2);
 }
 
 .nav__bar__logo {
-    height: 60px;
+    max-height: 68px;
+    cursor: pointer;
+    transition: all 600ms ease;
+}
+
+.nav__bar__logo:hover {
+    transform: rotateZ(360deg);
 }
 
 .nav__links {
@@ -70,13 +115,15 @@ body {
     text-decoration: underline;
 }
 
-.nav__slide {
+.nav__content {
     display: flex;
     justify-content: center;
 }
 
-.nav__slide__logo {
-    height: 600px;
+.nav__content__logo {
+    height: 780px;
     width: auto;
     margin: 0 auto;
 }
+
+/* Main */
