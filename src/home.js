@@ -1,5 +1,5 @@
 const slideshow = () => {
-    const slideElement = document.querySelector('.nav__slider');
+    const slideElement = document.querySelector('.header__slider');
     let slideCount = 1;
     setInterval(() => changeSlide(slideCount), 8000)
     const changeSlide = () => {
@@ -38,7 +38,24 @@ const navbarReveal = () => {
 
         lastScroll = currentScroll
     })
-
 }
 
-export { slideshow, navbarReveal }
+const responsiveNavbar = () => {
+    const navbar = document.querySelector('.nav__links');
+    const openBtn = document.querySelector('.nav-open');
+    const closeBtn = document.querySelector('.nav-close');
+
+    openBtn.addEventListener('click', () => openNavbar())
+    closeBtn.addEventListener('click', () => closeNavbar())
+
+    const openNavbar = () => {
+        navbar.classList.add('nav-active')
+        openBtn.classList.add('nav-open-inactive')
+    }
+    const closeNavbar = () => {
+        navbar.classList.remove('nav-active')
+        openBtn.classList.remove('nav-open-inactive')
+    }
+}
+
+export { slideshow, navbarReveal, responsiveNavbar }
