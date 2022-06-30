@@ -179,7 +179,10 @@ body {
 /* MENU */
 .menu-slider {
     display: flex;
+    gap: 40px;
     place-content: center;
+    flex-wrap: wrap;
+    
 }
 
 .menu-card {
