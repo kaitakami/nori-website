@@ -105,23 +105,23 @@ body {
 
 
 .slide-1::before {
-    background-image: url(../assets/slider/1.webp);
+    background-image: url(./assets/slider/1.webp);
 }
 
 .slide-2::before {
-    background-image: url(../assets/slider/2.webp);
+    background-image: url(./assets/slider/2.webp);
 }
 
 .slide-3::before {
-    background-image: url(../assets/slider/3.webp);
+    background-image: url(./assets/slider/3.webp);
 }
 
 .slide-4::before {
-    background-image: url(../assets/slider/4.webp);
+    background-image: url(./assets/slider/4.webp);
 }
 
 .slide-5::before {
-    background-image: url(../assets/slider/5.webp);
+    background-image: url(./assets/slider/5.webp);
 }
 
 /* HEADER */
@@ -165,6 +165,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .main__back-button {

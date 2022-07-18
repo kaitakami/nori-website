@@ -1,4 +1,4 @@
-import { containerElement } from './index'
+import { containerElement } from '../index'
 const renderElementsFooter = () => {
     const footerElement = document.createElement('footer')
     containerElement.appendChild(footerElement)
